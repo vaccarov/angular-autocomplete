@@ -1,0 +1,48 @@
+.rc-autocomplete {
+
+  &__container {
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 13px 0 13px 15px;
+    border: none;
+    border-bottom: 1px solid #DEDEDE;
+    color: #444444;
+
+    &::placeholder {
+      color: #87888A;
+    }
+
+    &_clear {
+      position: absolute;
+      top: 13px;
+      right: 15px;
+    }
+  }
+
+  &__list_items {
+    overflow-y: scroll;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  }
+
+  &__item {
+    height: 55px;
+    padding: 0 15px;
+    cursor: pointer;
+
+    &--selected {
+      background-color: rgba(216, 216, 216, 0.3);
+    }
+    & > div {
+      line-height: 55px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &_name {}
+  }
+}
